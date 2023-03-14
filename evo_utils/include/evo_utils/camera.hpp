@@ -11,9 +11,11 @@
 #include <ros/time.h>
 #include <tf_conversions/tf_eigen.h>
 
-#include <opencv2/core/core.hpp>
+#include <opencv4/opencv2/core/core.hpp>
+#include <opencv4/opencv2/calib3d/calib3d.hpp>
 
 #include "rpg_common_ros/params_helper.hpp"
+
 
 namespace evo_utils::camera {
 

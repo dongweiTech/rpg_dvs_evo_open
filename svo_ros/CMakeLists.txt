@@ -1,10 +1,17 @@
 project(svo_ros)
 cmake_minimum_required(VERSION 2.8.3)
 
+ADD_DEFINITIONS(
+    -std=c++17
+)
+
 find_package(catkin_simple REQUIRED)
 find_package(rostest REQUIRED)
 catkin_simple()
-find_package(OpenCV 3 REQUIRED)
+find_package(OpenCV 4 REQUIRED)
+
+find_package(PCL REQUIRED)
+include_directories(${PCL_INCLUDE_DIRS})
 
 include(SvoSetup)
 

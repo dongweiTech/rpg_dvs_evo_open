@@ -1,9 +1,9 @@
 # #!/bin/bash
 
 echo "First, we install the required apt packages"
-sudo add-apt-repository ppa:inivation-ppa/inivation
-sudo apt-get update
-sudo apt-get install            \
+add-apt-repository ppa:inivation-ppa/inivation
+apt-get update
+apt-get install                \
     ros-$1-sophus               \
     ros-$1-pcl-ros              \
     ros-$1-eigen-conversions    \
@@ -14,7 +14,7 @@ sudo apt-get install            \
     libglew-dev                 \
     libopencv-dev               \
     libyaml-cpp-dev             \
-    python-catkin-tools         \
+    python3-catkin-tools         \
     ros-$1-camera-info-manager  \
     ros-$1-image-geometry
 

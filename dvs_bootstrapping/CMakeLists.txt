@@ -10,12 +10,12 @@ include_directories(${Boost_INCLUDE_DIRS})
 find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 
-find_package(PCL 1.7 REQUIRED)
+find_package(PCL REQUIRED)
 include_directories(${PCL_INCLUDE_DIRS})
 
 SET(CMAKE_BUILD_TYPE RelWithDebInfo) # Release, RelWithDebInfo
 ADD_DEFINITIONS(
-    -std=c++11
+    -std=c++17
     -Wno-ignored-qualifiers
     -w
 )

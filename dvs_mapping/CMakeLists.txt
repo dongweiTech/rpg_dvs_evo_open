@@ -6,7 +6,7 @@ catkin_simple(ALL_DEPS_REQUIRED)
 
 SET(CMAKE_BUILD_TYPE RelWithDebInfo) # Release, RelWithDebInfo
 ADD_DEFINITIONS(
-    -std=c++11
+    -std=c++17
     -fopenmp
     -w
     -Wfatal-errors

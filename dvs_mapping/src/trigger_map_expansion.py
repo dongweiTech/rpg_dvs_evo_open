@@ -207,7 +207,7 @@ class TriggerMapExpansion:
 
         mask = np.zeros((self._h, self._w), np.uint8)
         cnt = 0.
-        for i in xrange(N):
+        for i in range(N):
             x, y = pts[i][:2]
             cv2.circle(mask, (int(x), int(y)), 7, 255, -1)
             if x >= 0 and y >= 0 and x < self._w and y < self._h:
